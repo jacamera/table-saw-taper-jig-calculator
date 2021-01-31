@@ -1,0 +1,8 @@
+label {
+	display: block;
+}
+fieldset,
+label,
+button {
+	margin: 0.35em 0;
+}

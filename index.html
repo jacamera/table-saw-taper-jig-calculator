@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Table saw taper jig calculator</title>
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	</head>
+	<body>
+		<h1>Table saw taper jig calculator</h1>
+		<form>
+			<fieldset>
+				<legend>Jig</legend>
+				<label>
+					Length
+					<input id="jig-length" type="text" inputmode="numeric" />
+				</label>
+				<label>
+					Width (overall)
+					<input id="jig-width" type="text" inputmode="numeric" />
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Cut</legend>
+				<label>
+					Top width (wider)
+					<input id="cut-top" type="text" inputmode="numeric" />
+				</label>
+				<label>
+					Bottom width (narrower)
+					<input id="cut-bottom" type="text" inputmode="numeric" />
+				</label>
+				<label>
+					Length
+					<input id="cut-length" type="text" inputmode="numeric" />
+				</label>
+			</fieldset>
+			<fieldset>
+				<legend>Output format (optional)</legend>
+				<label>
+					Round
+					<select id="round-method">
+						<option>up</option>
+						<option>down</option>
+					</select>
+					to nearest 1/
+					<input id="round-denominator" type="number" />
+					fractional unit
+				</label>
+			</fieldset>
+			<button id="calculate">Calculate</button>
+			<fieldset>
+				<legend>Output</legend>
+				<label>
+					Jig spread
+					<input id="jig-spread" type="text" readonly />
+				</label>
+				<label>
+					Fence position
+					<input id="fence-position" type="text" readonly />
+				</label>
+			</fieldset>
+		</form>
+		<script type="text/javascript" src="./bin/main.js"></script>
+	</body>
+</html>
